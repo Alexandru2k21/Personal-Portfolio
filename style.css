@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 15   px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgb(54, 4, 141);
+}  
+
 @font-face {
     font-family: 'SD Dystopian';
     src: url('fonts/Sddystopiandemo-GO7xa.otf') format('opentype');
@@ -8,6 +24,13 @@
 * {
     margin: 0;
     padding: 0;
+   
+
+}
+
+body {
+    height:  100em;
+    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 header {
@@ -15,7 +38,7 @@ header {
     height: 100px;
     display:flex;
     flex-direction: row;
-    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+   
 
 }
 
@@ -45,4 +68,25 @@ nav a:hover {
     width: 3.5em;
     margin: 10px;
     
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SD Dystopian';
+    font-size: 500px;
+}
+
+/* h1 a {
+    text-decoration: none;
+    color: aliceblue;   
+} */
+
+
+/*Yellow Scrollbar Styling */
+.yellow::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: yellow;
 }
